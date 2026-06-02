@@ -1,0 +1,98 @@
+/* Cleared default Vite styles to allow full-screen layout controlled by Syndi design system */
+
+:root {
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 2rem;
+}
+
+/* Base Responsive Typography */
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Auth Card Responsiveness */
+.auth-card {
+    padding: 3rem;
+}
+
+@media (max-width: 480px) {
+    .auth-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Hero Title Responsiveness */
+.hero-title {
+    font-size: 4rem;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Dashboard Responsiveness */
+.dashboard-container {
+    padding: var(--space-lg);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.dashboard-card {
+    padding: 2.5rem;
+}
+
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: var(--space-md);
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+        /* Force single column on mobile */
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .dashboard-card {
+        padding: 1.5rem;
+        /* Reduced padding */
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard-container {
+        padding: var(--space-sm);
+    }
+}
+
+/* Scroll Animation Utilities */
+.scroll-fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    will-change: opacity, transform;
+}
+
+.scroll-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

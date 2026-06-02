@@ -1,0 +1,42 @@
+:root {
+    /* Syndi Design System - Original Dark */
+
+    --hue-primary: 250;
+    /* Indigo */
+    --sat-primary: 100%;
+    --lig-primary: 60%;
+    --color-primary: hsl(var(--hue-primary), var(--sat-primary), var(--lig-primary));
+
+    --hue-secondary: 320;
+    /* Pink/Purple accent */
+    --sat-secondary: 100%;
+    --lig-secondary: 60%;
+    --color-secondary: hsl(var(--hue-secondary), var(--sat-secondary), var(--lig-secondary));
+
+    --color-bg: #0f172a;
+    /* Slate 900 */
+    --color-bg-dark: #020617;
+    /* Slate 950 */
+
+    --color-surface: rgba(255, 255, 255, 0.05);
+    --color-surface-hover: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.1);
+    --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+
+    --color-text-main: #ffffff;
+    --color-text-muted: #94a3b8;
+    /* Slate 400 */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 20px;
+    --radius-full: 9999px;
+
+    --transition-fast: 0.2s ease;
+}
